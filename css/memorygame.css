@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  align-items: center;
+  background-color:aliceblue;
+  
+}
+img{
+  width: 50px;
+  height: 50px;
+}
+
+.wrapper ul{
+  margin: 100px auto auto auto;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  width: 410px;
+}
+
+.wrapper ul li{
+  width: 85px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+
+}
+.wrapper ul .cards{
+  width: 80px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  text-align: center;
+  position: relative;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.wrapper .cards .frontview{
+  position: absolute;
+  justify-content: center;
+  padding-top: 20px;
+  width: 80px;
+  height: 100px;
+  backface-visibility: hidden;
+  
+}
+.wrapper .cards .backview{
+  position: absolute;
+  justify-content: center;
+  padding-top: 20px;
+  width: 80px;
+  height: 100px;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+
+.wrapper .cards.flip{
+  transform: rotateY(180deg);
+}
+
+
+.bg_green{
+  background-color: lightgreen;
+}
+nav, footer{
+	font-family: "Century Gothic", "serif";
+  background-color: #f7d0deeb;
+  text-align: center;
+}   
+nav a{
+	display: inline-block;
+	padding-top : 25px;
+	padding-bottom : 10px;
+	padding-right:20px;
+	padding-left:20px;
+	text-decoration:none;
+	font-weight:bold;
+  color: #222;
+  
+}
+footer div{
+	display:inline-block;
+	width:33%;
+}
+ul{
+	padding:0;
+	list-style:none;
+}
+footer nav a{
+	display:block;
+	padding:0;
+	text-align:left;
+}

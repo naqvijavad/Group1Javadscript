@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/musicplayer.css">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="MusicPlayer.html">Music Player</a> 
+    <a href="FAQ.html">FAQ's</a>
+    <a href="memorygame.html">Memory Game</a>
+    <a href="contactus.html">Contact Us</a>
+  </nav>
+
+  <main>
+  <div class="MusicPlayer">
+    <div class="SongDetails">
+      <div class="CurrentSong">PLAYING x OF y</div>
+      <div class="SongImage"></div>
+      <div class="SongName">Song Name</div>
+      <div class="SongArtist">Artist</div>
+    </div>
+    <div class="PlayerButtons">
+      <div class="PreviousSong" onclick="PrevSong()"><i class="fa fa-step-backward fa-2x"></i></div>
+      <div class="ToggleSong" onclick="Toggle_Song()"><i class="fa fa-play-circle fa-3x"></i></div>
+      <div class="NextSong" onclick="NextSong()"><i class="fa fa-step-forward fa-2x"></i></div>
+    </div>
+    <div class="Seeker">
+      <div class="SongStartTime">00:00</div>
+      <input type="range" min="1" max="100" value="0" class="SongSeeker" onchange="seekTo()">
+      <div class="TotalSongDuration">00:00</div>
+    </div>
+    <div class="Seeker">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100" value="99" class="VolumeSeeker" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+  <script src="musicplayer.js"></script>
+</main>
+
+<footer class="footer">
+      
+      
+  <div>
+  <h3>Quick Links</h3>
+  <nav>
+<a href="index.html">Home</a>
+<a href="MusicPlayer.html">Music Player</a> 
+<a href="FAQ.html">FAQ's</a>
+<a href="memorygame.html">Memory Game</a>
+<a href="contactus.html">Contact Us</a>
+</nav>
+    </div>
+    
+    <p id="copyright">Copyright &#169; JavaScript</p>
+  </footer>
+</body>
+</html>

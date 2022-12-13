@@ -1,0 +1,145 @@
+body {
+  background-color: lightgreen;
+  transition: background-color .5s;
+}
+
+main{
+  border:2px solid black;
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:70px;
+  background-image: linear-gradient(red, orangered,yellow);
+}
+
+.MusicPlayer {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.SongDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.SongImage {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border-radius: 15%;
+}
+
+.CurrentSong {
+  font-size: 1rem;
+  color:white;
+}
+
+.SongName {
+  font-size: 2rem;
+}
+
+.SongArtist {
+  font-size: 1rem;
+}
+
+.PlayerButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ToggleSong, .PreviousSong, .NextSong {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.ToggleSong:hover, .PreviousSong:hover, .NextSong:hover {
+  opacity: 1.0;
+}
+
+.Seeker {
+  width: 75%;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+/* Modify the appearance of the slider */
+.SongSeeker, .VolumeSeeker {
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+}
+
+/* Modify the appearance of the slider thumb */
+.SongSeeker::-webkit-slider-thumb, .VolumeSeeker::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.SongSeeker:hover, .VolumeSeeker:hover {
+  opacity: 1.0;
+}
+
+.SongSeeker {
+  width: 90%;
+}
+
+.VolumeSeeker {
+  width: 40%;
+}
+
+.SongStartTime, .TotalSongDuration {
+  padding: 10px;
+}
+
+i.fa-volume-down, i.fa-volume-up {
+  padding: 10px;
+}
+
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
+}
+nav, footer{
+	font-family: "Century Gothic", "serif";
+  background-color: #f7d0deeb;
+  text-align: center;
+}   
+nav a{
+	/* display: inline-block; */
+	padding-top : 25px;
+	padding-bottom : 10px;
+	padding-right:20px;
+	padding-left:20px;
+	text-decoration:none;
+	font-weight:bold;
+  color: #222;
+  
+}
+footer div{
+	display:inline-block;
+	width:33%;
+}
+ul{
+	padding:0;
+	list-style:none;
+}
+footer nav a{
+	display:block;
+	padding:0;
+	text-align:left;
+}
